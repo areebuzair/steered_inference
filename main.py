@@ -74,7 +74,7 @@ for domain in DOMAINS:
 
             for alpha in alpha_values:
                 # Register hook with current alpha
-                target_alpha = alpha * 2/10  # Scale alpha to the range [0, 2]
+                target_alpha = alpha  # Scale alpha to the range [0, 2]
                 print(f"Running with alpha={target_alpha:.2f}")
 
                 handle = None
@@ -88,7 +88,7 @@ for domain in DOMAINS:
                             **inputs,
                             max_new_tokens=200,
                             do_sample=True,
-                            temperature=0.4,
+                            temperature=0.2,
                             pad_token_id=tokenizer.eos_token_id
                         )
 
