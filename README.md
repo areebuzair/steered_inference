@@ -1,4 +1,11 @@
 ﻿# steered_inference
+
+This is the codebase used to test the performance of LLMs after steering using the stat_steer method.
+
+All the steering vectors used while generating inferences are contained inside the ```vectors``` folder.
+
+The ```prompts``` folder contains all the incomplete prompts from four domains which the LLMs had to complete.
+ 
 Politic prompts were adapted from the ```twinviews-13k``` dataset:
 ```
 @inproceedings{fulayRelationshipTruthPolitical2024,
